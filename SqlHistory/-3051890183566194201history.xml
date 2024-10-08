@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT SUM(salary)          as 합계
+      ,MAX(salary)          as 최대
+      ,MIN(salary)          as 최소
+      ,ROUND(AVG(salary),2) as 평균
+      ,COUNT(employee_id)   as 직원수
+FROM employees --<-- 집계 대상
+GROUP BY department_id
+ORDER BY 1;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724807546379]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

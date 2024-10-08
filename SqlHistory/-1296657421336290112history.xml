@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM free_board a
+    ,comm_code  b
+WHERE a.bo_category = b.comm_cd
+AND   a.bo_writer LIKE '%팽%'
+-- 검색조건
+ORDER BY bo_no DESC
+-- 정렬조건;]]></sql>
+		<connection><![CDATA[jdbc]]></connection>
+		<timestamp><![CDATA[1728352053814]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.023]]></execTime>
+	</historyItem>
+</history>

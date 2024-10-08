@@ -1,0 +1,38 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM(
+    SELECT rownum as rnum, a.*
+    FROM (
+    SELECT a.bo_no
+            ,a.bo_title
+            ,a.bo_category
+            ,b. comm_nm as bo_category_nm
+            ,a.BO_WRITER
+            ,a. bo_pass
+            ,a.bo_content
+            ,a.bo_ip
+            ,a.bo_hit
+            ,a.bo_del_yn
+            ,TO_CHAR(a.bo_reg_date, 'YYYY-MM-DD') as bo_reg_date
+            ,TO_CHAR(a.bo_mod_date, 'YYYY-MM-DD') as bo_mod_date
+            FROM free_board a , comm_code b
+            WHERE a.bo_category = b.comm_cd
+            AND a.bo_title LIKE '%'|| :searchWord ||'%'
+            AND a.bo_category = :searchCategory
+            --AND a.bo_content LIKE '%%';
+            --AND a.bo_title LIKE '%인사%';
+            --AND a.bo_writer LIKE '%팽%';
+            -- 검색조건
+            ORDER BY bo_no DESC
+            ) a
+    ) b
+WHERE rnum BETWEEN :firstRow AND :lastRow;]]></sql>
+		<connection><![CDATA[jdbc]]></connection>
+		<timestamp><![CDATA[1728359124951]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[8]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

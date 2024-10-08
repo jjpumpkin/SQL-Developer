@@ -1,0 +1,418 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<client-settings class="java.util.HashMap" xmlns="http://xmlns.oracle.com/jdeveloper/110000/client-preferences">
+   <Item>
+      <Key>editors-options</Key>
+      <Value class="oracle.ide.editor.EditorsOptions">
+         <editorsData/>
+         <lruFiles>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ide.ceditor.CodeEditorAddin</editor>
+               <explicit>false</explicit>
+               <nodeClass>oracle.ide.model.UnrecognizedTextNode</nodeClass>
+               <nodeURL path="../../계정sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.bali.xml.addin.XMLEditorAddin</editor>
+               <explicit>false</explicit>
+               <nodeClass>oracle.bali.xml.addin.XMLSourceNode</nodeClass>
+               <nodeURL path="../../CodeTemplate.xml"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../제목 없음1.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ide.ceditor.CodeEditorAddin</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.model.UnrecognizedTextNode</nodeClass>
+               <nodeURL path="../../studysql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#study.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day06.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day7.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../studentsql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day9.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day4.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day3.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>false</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day2.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../Day.sql"/>
+               <projectURL path="../../system23.1.0.097.1607/o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../../system23.1.0.097.1607/o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day10.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#study.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day11.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#study.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../문제 1sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ide.ceditor.CodeEditorAddin</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.model.UnrecognizedTextNode</nodeClass>
+               <nodeURL path="../../연습sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day12.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../stock_create.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#怨꾩젙+�깮�꽦.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../naver_stocks.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../naver_stock.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#怨꾩젙+�깮�꽦.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../java.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.raptor.startpage.StartPageViewer</editor>
+               <explicit>false</explicit>
+               <nodeClass>oracle.dbtools.raptor.startpage.StartPageNode</nodeClass>
+               <nodeURL protocol="bundleresource" host="69.fwk1540925275" port="0" path="/oracle/dbtools/raptor/startpage/StartPage.html"/>
+               <projectURL/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../springStudy.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>true</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../jsp_servlet.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+            <Item class="oracle.ide.editor.RecentFile">
+               <editor>oracle.ideimpl.editor.DeclarativeEditorAddin-oracle.dbtools.worksheet.editor.Worksheet</editor>
+               <explicit>false</explicit>
+               <nodeClass>oracle.ide.db.model.SqlNode</nodeClass>
+               <nodeURL path="../../day15.sql"/>
+               <projectURL path="../o.sqldeveloper/projects/IdeConnections#java.jpr"/>
+               <recentTime>0</recentTime>
+               <reopen>false</reopen>
+               <workspaceURL path="../o.sqldeveloper/projects/Databases.jws"/>
+            </Item>
+         </lruFiles>
+         <recentFilesShowAll>false</recentFilesShowAll>
+         <recentFilesShowClosedOnly>true</recentFilesShowClosedOnly>
+      </Value>
+   </Item>
+   <Item>
+      <Key>global-ignore-list</Key>
+      <Value class="oracle.ide.config.GlobalIgnoreList">
+         <list class="java.util.ArrayList">
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/CVS/**</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.#*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.rvi</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.keep</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.contrib*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.ade_path/**</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.ade_path</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.depprod</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.depprod_nt</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.fullsource</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.fullsource_nt</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.*.cs</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.labellog.emd</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.ignore</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.generated.java</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.bak</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.cdi</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.data/**</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.svn/**</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.client_contrib</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.saved.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.unco.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.unbranch.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.rename.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.sync.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.unmkelem.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.mv.*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.scc</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*~</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*#JDEVADF_*</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.do_pool</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.do_pool/**</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/.DS_Store</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.DS_Store</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.git</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.local</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+            <Item class="oracle.javatools.util.Pair">
+               <first class="java.lang.String">**/*.localz</first>
+               <second class="java.lang.Boolean">true</second>
+            </Item>
+         </list>
+      </Value>
+   </Item>
+</client-settings>

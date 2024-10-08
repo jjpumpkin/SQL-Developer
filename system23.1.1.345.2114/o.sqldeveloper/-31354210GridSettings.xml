@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">CUSTOMER_ID</Item>
+      <Item class="java.lang.String">CUSTOMER_NAME</Item>
+      <Item class="java.lang.String">PHONE_NUMBER</Item>
+      <Item class="java.lang.String">EMAIL</Item>
+      <Item class="java.lang.String">FIRST_REG_DATE</Item>
+      <Item class="java.lang.String">SEX_CODE</Item>
+      <Item class="java.lang.String">BIRTH</Item>
+      <Item class="java.lang.String">JOB</Item>
+      <Item class="java.lang.String">ZIP_CODE</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>117</Item>
+      <Item>130</Item>
+      <Item>187</Item>
+      <Item>271</Item>
+      <Item>122</Item>
+      <Item>89</Item>
+      <Item>117</Item>
+      <Item>97</Item>
+      <Item>89</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23studySELECT *
+FROM customer</uniqueName>
+</TableSettings>

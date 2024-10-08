@@ -1,0 +1,68 @@
+CREATE TABLE 강의내역 (
+     강의내역번호 NUMBER(3)
+    ,교수번호 NUMBER(3)
+    ,과목번호 NUMBER(3)
+    ,강의실 VARCHAR2(10)
+    ,교시  NUMBER(3)
+    ,수강인원 NUMBER(5)
+    ,년월 date
+);
+
+CREATE TABLE 과목 (
+     과목번호 NUMBER(3)
+    ,과목이름 VARCHAR2(50)
+    ,학점 NUMBER(3)
+);
+
+CREATE TABLE 교수 (
+     교수번호 NUMBER(3)
+    ,교수이름 VARCHAR2(20)
+    ,전공 VARCHAR2(50)
+    ,학위 VARCHAR2(50)
+    ,주소 VARCHAR2(100)
+);
+
+CREATE TABLE 수강내역 (
+    수강내역번호 NUMBER(3)
+    ,학번 NUMBER(10)
+    ,과목번호 NUMBER(3)
+    ,강의실 VARCHAR2(10)
+    ,교시 NUMBER(3)
+    ,취득학점 VARCHAR(10)
+    ,년월 DATE 
+);
+
+CREATE TABLE 학생 (
+     학번 NUMBER(10)
+    ,이름 VARCHAR2(50)
+    ,주소 VARCHAR2(100)
+    ,전공 VARCHAR2(50)
+    ,부전공 VARCHAR2(500)
+    ,생년월일 DATE
+    ,학기 NUMBER(3)
+    ,평점 NUMBER
+);
+
+ALTER TABLE 학생 ADD CONSTRAINT PK_학생_학번 PRIMARY KEY (학번);
+
+ALTER TABLE 수강내역 ADD CONSTRAINT pk_수강내역_수강내역번호 PRIMARY KEY(수강내역번호);
+
+ALTER TABLE 과목 ADD CONSTRAINT pk_과목_과목번호 PRIMARY KEY(과목번호);     
+
+ALTER TABLE 교수 ADD CONSTRAINT pk_교수_교수번호 PRIMARY KEY(교수번호);  
+
+ALTER TABLE 강의내역 ADD CONSTRAINT pk_강의내역_강의내역번호 PRIMARY KEY(강의내역번호);
+
+
+ALTER TABLE 수강내역 ADD CONSTRAINT FK_학생_학번 FOREIGN KEY(학번) REFERENCES 학생(학번);
+
+ALTER TABLE 수강내역 ADD CONSTRAINT Fk_과목_과목번호 FOREIGN KEY(과목번호) REFERENCES 과목(과목번호);
+
+ALTER TABLE 강의내역 ADD CONSTRAINT FK_교수_교수번호 FOREIGN KEY(교수번호) REFERENCES 교수(교수번호);
+
+ALTER TABLE 강의내역 ADD CONSTRAINT FK_과목_과목번호2 FOREIGN KEY(과목번호) REFERENCES 과목(과목번호);
+
+
+
+SELECT * 
+FROM 과목

@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT 학생.학번, 학생.이름
+   ,COUNT(수강내역.수강내역번호) as 수강내역건수
+FROM 학생, 수강내역
+WHERE 학생.학번 = 수강내역.학번(+)
+GROUP BY 학생.학번 ,학생.이름
+ORDER BY 3 DESC;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725237917843]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.022]]></execTime>
+	</historyItem>
+</history>

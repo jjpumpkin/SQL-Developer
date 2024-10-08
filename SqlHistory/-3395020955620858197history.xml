@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT customer_id
+       ,customer_name
+       ,phone_number
+       ,email
+       ,first_reg_date
+       ,birth
+       ,zip_code
+       ,job
+       ,sex_code
+FROM customer;]]></sql>
+		<connection><![CDATA[study]]></connection>
+		<timestamp><![CDATA[1725253087762]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.005]]></execTime>
+	</historyItem>
+</history>

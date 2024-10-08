@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT prod_category
+      ,prod_subcategory
+      ,COUNT(prod_id) as 상품수
+FROM products
+GROUP BY ROLLUP (prod_category
+                 , prod_subcategory);]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724893298249]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.005]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[file:/C:/Users/202-1/AppData/Roaming/SQL Developer/day10.sql]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725507045710]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[14]]></executed>
+		<execTime><![CDATA[0.0]]></execTime>
+	</historyItem>
+</history>

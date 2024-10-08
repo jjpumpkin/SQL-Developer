@@ -1,0 +1,19 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT ABS(-10) as ex1
+      ,ABS(10) as ex2
+      ,ROUND(10.5555,1) as ex3   --소수점 둘째까지 해서 1번째 자리로
+      ,ROUND(10.5555)   as ex4
+      ,TRUNC(10.5555,1) as ex5
+      ,CEIL(10.5555)    as ex6
+      ,MOD(4,2)         as ex7
+      ,MOD(5,2)         as ex7
+FROM dual;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724723569993]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

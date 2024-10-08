@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT emp_name
+      ,hire_date
+      , TO_CHAR(hire_date, 'yyyy')
+      , TO_CHAR(SYSDATE, 'YYYY')
+      , TO_CHAR(SYSDATE, 'YYYY') - TO_CHAR(hire_date, 'YYYY') as 근속년수
+FROM employees
+WHERE TO_CHAR (SYSDATE, 'YYYY') - TO_CHAR(hire_date, 'YYYY') >=25
+ORDER BY 근속년수 DESC;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724727339358]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

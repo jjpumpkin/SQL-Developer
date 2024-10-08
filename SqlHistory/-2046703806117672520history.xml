@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT 이름,전공,평점 ,LAG(이름,1,'가장높음')OVER(PARTITION BY 전공
+                                    ORDER BY 평점 DESC)
+                    ,LEAD(이름,1,'가장낮음')OVER(PARTITION BY 전공
+                                    ORDER BY 평점 DESC)
+FROM 학생;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725587429792]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

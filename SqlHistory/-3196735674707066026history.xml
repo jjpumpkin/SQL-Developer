@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT cust_name 
+      ,cust_gender
+      ,CASE WHEN cust_gender ='F' THEN '여자'--조건은 빠질수 있고 원본 데이터를 보고 함
+           WHEN cust_gender ='M' THEN '남자'
+       END as gender
+
+      ,cust_year_of_birth
+FROM customers
+WHERE cust_year_of_birth=1990 AND cust_gender ='M'
+ORDER BY cust_year_of_birth DESC,cust_name ASC;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724385292151]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.011]]></execTime>
+	</historyItem>
+</history>

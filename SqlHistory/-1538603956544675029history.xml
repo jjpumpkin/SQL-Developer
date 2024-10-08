@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT TO_CHAR (hire_date,'YYYY') 년도
+       ,COUNT(*) as 직원수
+FROM employees
+GROUP BY TO_CHAR(hire_date,'YYYY')
+HAVING COUNT(*) >=10
+ORDER BY 2;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724816101075]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

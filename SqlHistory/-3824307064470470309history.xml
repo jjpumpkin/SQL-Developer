@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT a.reserv_date  --select *하고 필요한거 적기
+      , DECODE(b.item_id, 'M0001',b.sales, 0) as SPECIAL_SET
+      ,b.item_id
+      ,b.sales
+FROM reservation a
+    ,order_info b
+WHERE a.reserv_no = b.reserv_no;]]></sql>
+		<connection><![CDATA[study]]></connection>
+		<timestamp><![CDATA[1726022086260]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.012]]></execTime>
+	</historyItem>
+</history>

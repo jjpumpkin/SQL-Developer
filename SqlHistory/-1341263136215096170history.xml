@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM 학생, 수강내역
+WHERE 학생.학번 = 수강내역. 학번
+AND 이름 ='최숙경';]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724980643339]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

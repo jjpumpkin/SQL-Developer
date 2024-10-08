@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">CUST_ID</Item>
+      <Item class="java.lang.String">CUST_NAME</Item>
+      <Item class="java.lang.String">CUST_GENDER</Item>
+      <Item class="java.lang.String">CUST_YEAR_OF_BIRTH</Item>
+      <Item class="java.lang.String">CUST_MARITAL_STATUS</Item>
+      <Item class="java.lang.String">CUST_STREET_ADDRESS</Item>
+      <Item class="java.lang.String">CUST_POSTAL_CODE</Item>
+      <Item class="java.lang.String">CUST_CITY</Item>
+      <Item class="java.lang.String">CUST_CITY_ID</Item>
+      <Item class="java.lang.String">CUST_STATE_PROVINCE</Item>
+      <Item class="java.lang.String">CUST_STATE_PROVINCE_ID</Item>
+      <Item class="java.lang.String">COUNTRY_ID</Item>
+      <Item class="java.lang.String">CUST_MAIN_PHONE_NUMBER</Item>
+      <Item class="java.lang.String">CUST_INCOME_LEVEL</Item>
+      <Item class="java.lang.String">CUST_CREDIT_LIMIT</Item>
+      <Item class="java.lang.String">CUST_EMAIL</Item>
+      <Item class="java.lang.String">CUST_TOTAL</Item>
+      <Item class="java.lang.String">CUST_TOTAL_ID</Item>
+      <Item class="java.lang.String">CUST_SRC_ID</Item>
+      <Item class="java.lang.String">CUST_EFF_FROM</Item>
+      <Item class="java.lang.String">CUST_EFF_TO</Item>
+      <Item class="java.lang.String">CUST_VALID</Item>
+      <Item class="java.lang.String">CREATE_DATE</Item>
+      <Item class="java.lang.String">UPDATE_DATE</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>75</Item>
+      <Item>215</Item>
+      <Item>108</Item>
+      <Item>153</Item>
+      <Item>165</Item>
+      <Item>425</Item>
+      <Item>146</Item>
+      <Item>299</Item>
+      <Item>103</Item>
+      <Item>425</Item>
+      <Item>183</Item>
+      <Item>95</Item>
+      <Item>195</Item>
+      <Item>285</Item>
+      <Item>140</Item>
+      <Item>271</Item>
+      <Item>201</Item>
+      <Item>115</Item>
+      <Item>100</Item>
+      <Item>121</Item>
+      <Item>117</Item>
+      <Item>92</Item>
+      <Item>117</Item>
+      <Item>117</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23javaSELECT *
+FROM customers</uniqueName>
+</TableSettings>

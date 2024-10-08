@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT TO_CHAR(SEX_CODE) as GENDER
+       ,COUNT(SEX_CODE) as cnt
+,CASE WHEN SEX_CODE ='F' THEN '여자' 
+      WHEN SEX_CODE ='M' THEN '남자'
+      END as SEX_CODE
+FROM customer
+--WHERE TO_CHAR(SEX_CODE) ='cnt'
+GROUP BY (SEX_CODE);]]></sql>
+		<connection><![CDATA[study]]></connection>
+		<timestamp><![CDATA[1725422162016]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[15]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

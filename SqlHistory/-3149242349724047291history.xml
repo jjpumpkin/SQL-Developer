@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM (SELECT ROWNUM as rnum
+   , a.* -- a의 전체를 의미함
+FROM( SELECT mem_name
+            ,mem_mail
+            ,mem_add1
+          FROM member 
+          ORDER BY 1
+          ) a 
+      )   
+WHERE rnum BETWEEN 9 AND 10;]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1725238701261]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,26 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[WITH b AS (SELECT period, region, SUM(loan_jan_amt) as jan_sum
+          FROM kor_loan_status
+          GROUP BY period, region
+        ), c AS (SELECT b.period, MAX(b.jan_sum) as max_jan_amt
+           FROM b,
+           (SELECT MAX(period) as max_month
+            FROM kor_loan_status
+            GROUP BY SUBSTR(period,1,4)) a
+           WHERE b.period = a.max_month
+           GROUP BY b.period
+           )
+        SELECT b.*
+        FROM b,c
+        WHERE b.period= c.period
+        AND b.jan_sum= c.max_jan_amt
+        ORDER BY 1;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725413445767]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[0.011]]></execTime>
+	</historyItem>
+</history>

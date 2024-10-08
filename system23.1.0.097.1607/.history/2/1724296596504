@@ -1,0 +1,183 @@
+/*
+
+    table 테이블
+    1.테이블명 컬럼명의 최대 크기는 30byte (영문자)1개 1byte)
+    2.테이블명 컬럼명으로 예약어는 사용할 수 없음.(select,varchar2...)
+    3.테이블명 컬럼명으로 문자,숫자, _,$,#을 사용할 수 있지만
+      첫 글자는 문자만 올 수 있음.
+    4. 한 테이블에 사용 가능한 컬럼은 최대 255개
+ -- */
+ -- 명령어는 대소문자 구별되지 않음.
+ -- 데이터는 대소문자 구별됨.
+CREATE TABLE ex1_1 (
+    coll CHAR(10)
+    ,col2 VARCHAR(10)    -- 하나의 컬럼은 하나의 타입과 사이즈를 가짐
+    );
+ -- 테이블 삭제
+ DROP TABLE ex1_1;
+ -- INSERT 데이터 삽입
+ INSERT INTO ex1_1 (coll,col2)
+ VALUES ('oracle', '오라');
+  INSERT INTO ex1_1 (coll,col2)
+ VALUES ('oracle', '오라클');
+ INSERT INTO ex1_1 (coll,col2)
+ VALUES ('oracle', '오라클db');
+ --데이터 조회
+ SELECT* --* 전체(컬럼)를 의미함.
+ FROM ex1_1;
+ 
+ SELECT coll -- 조회하고 싶은 컬럼작성
+ FROM ex1_1;
+ 
+ SELECT length(coll) 
+        ,length(col2)
+        ,length(coll) 
+        ,length(col2)
+       FROM ex1_1;
+       
+-- 명령어는 대소문자를 구별하지 않음.
+-- 명령어를 쉽게 구분하려고 대소문자를 사용
+-- SQL문은 보기 쉽게 들여쓰기를 해서 작성
+SELECT *
+FROM employees; -- from 절은 조회하고자 하는 테이블 작성
+-- 테이블 정보 조회
+DESC employees;
+SELECT emp_name     as nm -- AS,as(alias 별칭)
+      , hire_date   hd    -- 콤마를 구분으로 컬러명 띄어쓰기 이후 쓰면
+                          -- 별칭으로 인식
+      , salary      sa_la       -- 별칭으로 띄어쓰기는 안됨
+      , department_id  "부서아이디"  --한글은"" 하지만 한글 별칭은 안씀
+FROM employees;   
+-- 검색조건
+SELECT *
+FROM employees
+WHERE salary >= 10000;
+-- 검색조건 여러개 AND or OR
+SELECT *
+FROM employees
+WHERE salary >= 10000 -- and는 그리고의 의미 (둘다 참)
+AND   salary < 11000
+AND department_id = 80;
+
+
+SELECT *
+FROM employees
+WHERE department_id = 30
+OR    department_id = 60;
+-- 정렬조건 order by ASC 오름차순, DESC 내림차순
+SELECT emp_name
+      , department_id
+FROM employees
+ORDER BY department_id, emp_name DESC; -- default ASC
+-- 사칙연산 사용가능
+SELECT emp_name
+    , salary as 월급
+    , salary - salary * 0.1 as 실수령액
+    , salary * 12 as 연봉
+    , ROUND(salary /30 , 2) as 일당 --알리야스 씀 소수점 둘째자리
+FROM employees
+ORDER BY 연봉 DESC;
+-- 실행순서 FROM-> WHERE-> GROUP BY-> HAVING-> SELECT-> ORDER BY
+-- 이름으로 데이터 조작하면 현상이 발생
+-- null 값에 들어와서는 안되는 컬럼의 경우,NOT NULL 제약조건을 붙여준다.
+-- 유니크 컬럼이면 두개의 데이터가 올수없음. 대문자로 팽이 들어오면 유니크
+-- 컬럼이어도 데이터가 들어온다
+-- 이름을 지어서 제약조건을 주면 제약조건 제약조건 컬럼명 이름
+-- 유니크이면서 not null이면 띄어쓰기 해야함
+
+/*
+    제약조건
+    NOT NULL 널을 허용하지 않겠다.
+    UNIQU 중복을 허용하지 않겠다!.
+    CHECK 특정 데이터만 받겠다.
+    PRIMARY KEY 기본키(하나의 테이블에 1개만 설정가능(두개의 컬럼으로도 가능)
+                      하나의 행을 구분하는 식별자 or 키값이라고 하며 pk라 함.
+                      pk는 기본적으로 Unique 하며 NOT NULL임
+   FOREIGN KEY 외래키 다른 테이블의 PK를 참조하는 키
+   */
+  CREATE TABLE exl_2 (
+    mem_id VARCHAR2(100) NOT NULL UNIQUE
+    ,mem_nm VARCHAR2(100)
+    ,mem_email VARCHAR2(100) NOT NULL
+    ,CONSTRAINT uq_exl_2 UNIQUE(mem_email) --제약조건의 이름을 관리하고 싶을때
+);
+INSERT INTO exl_2 (mem_id, mem_email)
+VALUES ('a001', 'a001@gmail.com'); --default 가 null 허용이기때문에 mem_nm 없어도됨.
+INSERT INTO exl_2 (mem_id, mem_email)
+VALUES ('A001', 'A001@gmail.com');
+INSERT INTO exl_2 (mem_id)
+VALUES ('b01');
+
+
+
+
+-- 아이디만 삽입하거나 이메일만 삽입 하려고 하면 오류발생
+SELECT * 
+FROM user_constraints
+WHERE table_name = 'EXl_2';
+SELECT * 
+FROM exl_2;
+/* 숫자 데이터 타입(number)
+ number (p,s) p는 소수점을 기준으로 모든 유효숫자 자릿수를 의미함.
+              s는 소수점자리수를  의미함(디폴트 0)
+              s가 2이면 소수점 2자리까지 (나머지는 반올림됨)
+              s가 음수 이면 소수점 기준 왼쪽 자리수 만큼 반올림
+              
+              */
+CREATE TABLE exl_3(
+    num1 NUMBER(3)  --정수만 3자리
+    ,num2 NUMBER(3,2) -- 정수1, 소수점2  -- 3번째자리고 소수점 2째자리 뺴면 1자리수 o
+    ,num3 NUMBER(5,2) -- 십의 자리까지 만올림(총7자리)
+    ,num4 NUMBER--38
+    );
+INSERT INTO exl_3(num1) VALUES(0.7898);
+INSERT INTO exl_3(num1) VALUES(99.5);
+INSERT INTO exl_3(num1) VALUES(1004); --오류남.
+-- 정수만 반환돼 반올림 해서 출력
+
+INSERT INTO exl_3(num2) VALUES(0.7898);
+INSERT INTO exl_3(num2) VALUES(1.7898);
+INSERT INTO exl_3(num2) VALUES(9.9999); --오류
+INSERT INTO exl_3(num2) VALUES(32);     --오류
+-- 정수 자리 한개만 되기 때문에 9.99 반올림 10 x 32도 2자릿수라 x
+
+INSERT INTO exl_3(num3) VALUES(12345.2345);
+INSERT INTO exl_3(num3) VALUES(1234569.2345);
+INSERT INTO exl_3(num3) VALUES(12345699.2345); --오류 7자리 넘음
+
+
+INSERT INTO exl_3(num4) VALUES(14123493.34892340);
+SELECT * FROM exl_3;
+/*
+    날짜 데이터 타입(date 년월일시분초, timestamp 년월일시분초.밀리초)
+    sysdate <-- 현재시간, systimestamp <-- 현재 밀리초까지
+*/
+CREATE TABLE exl_4(
+    date1 DATE
+    ,date2 TIMESTAMP
+ );
+INSERT INTO exl_4 VALUE (SYSDATE, SYSIMESTAMP);
+SELECT * FROM exl_4;
+/* check 제약조건 */
+CREATE TABLE exl_5 (
+  nm VARCHAR2(100)
+  ,age NUMBER
+  ,gender VARCHAR2(1)
+  ,CONSTRAINT ck_exl_5_age CHECK(age BETWEEN 1 AND 150)
+  ,CONSTRAINT ck_exl_5_gender CHECK(gender ('F,'M'))
+);
+INSERT INTO exl_5 VALUES('팽수', 10, 'M');
+INSERT INTO  exl_5 VALUES('길동', 200, 'M');
+);
+CREATE TABLE dep)
+ deptno NUMBER(3) PRIMARY KEY
+ ,dept_nm VARCHAR2(20)
+ ,dep_floor NUMBER(5)
+ );
+ CREATE TABLE emp (
+ empno NUMBER(5) PRIMARY KEY
+ ,emp_nm VARCHAR2(20)
+ ,title VARCHAR2(20)      --해당 테이블의 컬럼을 참조하겠다-
+ ,dno NUMBER(3) CONSTRAINT emp_fk REFERENCES dep(deptno) --외래키
+ );
+--dep 테이블을 먼저 만든다.

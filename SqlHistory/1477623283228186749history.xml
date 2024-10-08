@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM FREE_BOARD
+-- total count
+
+
+--AND   a.bo_writer LIKE '%팽%'
+--AND   a.bo_content LIKE '%%'
+-- 검색조건
+ORDER BY bo_no DESC
+-- 정렬조건;]]></sql>
+		<connection><![CDATA[jdbc]]></connection>
+		<timestamp><![CDATA[1728353367366]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,22 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM ( SELECT rownum as rnum, a.*
+       FROM ( SELECT *
+       FROM free_board a
+            ,comm_code  b
+       WHERE a.bo_category = b.comm_cd
+       AND   a.bo_title LIKE '%'|| :searchWord || '%'
+       AND   a.bo_category = :searchCategory
+       ORDER BY bo_no DESC
+     ) a
+   ) b
+WHERE rnum BETWEEN :firstRow AND :lastRow;]]></sql>
+		<connection><![CDATA[jdbc]]></connection>
+		<timestamp><![CDATA[1728352640887]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[6]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT ADD_MONTHS(SYSDATE, 1) as ex1--다음달 월을 더해줌 그래서 다음달
+      ,ADD_MONTHS(SYSDATE,-1) as ex2--전달
+      ,LAST_DAY(SYSDATE)      as ex3-- 이번달 마지막날
+      ,NEXT_DAY(SYSDATE, '화요일')as ex4 --다음주 화요일 나옴 9/3 
+      ,NEXT_DAY(SYSDATE, '수요일')as ex5 -- 내일이 수요일 이므로 가까운수요일로 출력 8/28
+FROM dual;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724725245358]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

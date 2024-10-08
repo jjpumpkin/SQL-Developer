@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">CODE</Item>
+      <Item class="java.lang.String">DISCUSSION_ID</Item>
+      <Item class="java.lang.String">TITLE</Item>
+      <Item class="java.lang.String">CONTENTS</Item>
+      <Item class="java.lang.String">READ_COUNT</Item>
+      <Item class="java.lang.String">GOOD_COUNT</Item>
+      <Item class="java.lang.String">CREATE_DT</Item>
+      <Item class="java.lang.String">COMMENT_COUNT</Item>
+      <Item class="java.lang.String">UPDATE_DT</Item>
+      <Item class="java.lang.String">BAD_COUNT</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>189</Item>
+      <Item>225</Item>
+      <Item>410</Item>
+      <Item>441</Item>
+      <Item>75</Item>
+      <Item>75</Item>
+      <Item>75</Item>
+      <Item>75</Item>
+      <Item>75</Item>
+      <Item>75</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1select * from stock_bbs</uniqueName>
+</TableSettings>

@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT TO_CHAR(123456, '999,999,999') as ex1
+      ,TO_CHAR(SYSDATE,'YYYY-MM-DD') as ex2
+      ,TO_CHAR(SYSDATE,'YYYYMMDD') as ex3
+      ,TO_CHAR(SYSDATE,'YYYY/MM/DD HH24:MI:SS') as ex4
+      ,TO_CHAR(SYSDATE,'YYYY/MM/DD HH12:MI:SS') as ex5
+      ,TO_CHAR(SYSDATE,'day') as ex6
+      ,TO_CHAR(SYSDATE,'YYYY') as ex7
+      ,TO_CHAR(SYSDATE,'YY') as ex8
+      ,TO_CHAR(SYSDATE,'dd') as ex9
+      ,TO_CHAR(SYSDATE,'d') as ex10
+FROM dual;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725335618767]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

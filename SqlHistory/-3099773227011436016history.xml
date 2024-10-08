@@ -1,0 +1,19 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[WITH test_data AS(
+    SELECT 'abcd' as pw FROM dual
+    UNION ALL
+    SELECT 'abcd안녕' as pw FROM dual
+    UNION ALL
+    SELECT 'abcd안녕123' as pw FROM dual
+)
+SELECT *
+FROM test_data;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725413589940]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,24 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT  hire_date 
+       ,COUNT(*) as 입사직원수
+FROM employees
+GROUP BY hire_date
+
+
+
+
+
+
+
+--2.년도별 요일의 고용인원수를 출력하시오
+--(employees, hire_date)사용
+--정렬 년도 오름차순]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724817022187]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

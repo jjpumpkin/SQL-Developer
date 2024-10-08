@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT mem_id
+      ,mem_name
+
+FROM cart,member      
+--WHERE  cart.cart_member = member.mem_id  --멤버 아이디중에 카트멤버랑 겹치는 값만 보여줌
+WHERE  cart.cart_member(+) = member.mem_id -- null 값이 있는쪽을 보여준다 없는쪽에 +표시]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1724993031828]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.006]]></execTime>
+	</historyItem>
+</history>

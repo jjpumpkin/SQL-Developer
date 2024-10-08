@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM 학생
+CROSS JOIN 수강내역;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725243341924]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[40]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

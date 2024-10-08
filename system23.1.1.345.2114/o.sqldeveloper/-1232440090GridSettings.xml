@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">PROD_ID</Item>
+      <Item class="java.lang.String">PROD_NAME</Item>
+      <Item class="java.lang.String">PROD_LGU</Item>
+      <Item class="java.lang.String">PROD_BUYER</Item>
+      <Item class="java.lang.String">PROD_COST</Item>
+      <Item class="java.lang.String">PROD_PRICE</Item>
+      <Item class="java.lang.String">PROD_SALE</Item>
+      <Item class="java.lang.String">PROD_OUTLINE</Item>
+      <Item class="java.lang.String">PROD_DETAIL</Item>
+      <Item class="java.lang.String">PROD_IMG</Item>
+      <Item class="java.lang.String">PROD_TOTALSTOCK</Item>
+      <Item class="java.lang.String">PROD_INSDATE</Item>
+      <Item class="java.lang.String">PROD_PROPERSTOCK</Item>
+      <Item class="java.lang.String">PROD_SIZE</Item>
+      <Item class="java.lang.String">PROD_COLOR</Item>
+      <Item class="java.lang.String">PROD_DELIVERY</Item>
+      <Item class="java.lang.String">PROD_UNIT</Item>
+      <Item class="java.lang.String">PROD_QTYIN</Item>
+      <Item class="java.lang.String">PROD_QTYSALE</Item>
+      <Item class="java.lang.String">PROD_MILEAGE</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>0</Item>
+      <Item>0</Item>
+      <Item>145</Item>
+      <Item>302</Item>
+      <Item>82</Item>
+      <Item>98</Item>
+      <Item>103</Item>
+      <Item>103</Item>
+      <Item>103</Item>
+      <Item>406</Item>
+      <Item>333</Item>
+      <Item>201</Item>
+      <Item>140</Item>
+      <Item>117</Item>
+      <Item>149</Item>
+      <Item>89</Item>
+      <Item>100</Item>
+      <Item>116</Item>
+      <Item>86</Item>
+      <Item>95</Item>
+      <Item>114</Item>
+      <Item>112</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item class="java.lang.String">20 asc</Item>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1SELECT * FROM "MEMBER"."PROD"</uniqueName>
+</TableSettings>

@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT mem_id      AS user_id
+     , mem_pass    AS user_pw
+     , mem_name    AS user_nm
+     , 'Y'         AS use_yn
+     , SYSDATE     AS create_dt
+FROM member;]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1726798741467]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.035]]></execTime>
+	</historyItem>
+</history>

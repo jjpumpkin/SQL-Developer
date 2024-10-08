@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT A.cust_id,    --고객아이디
+       A.sales_month, --매출월
+       A.amount_sold,  --매출금액
+       B.country_id
+FROM  sales a
+    , customers b
+    , countries c
+WHERE a.cust_id = b.cust_id
+AND  b.country_id =c.country_id
+AND  a.sales_month BETWEEN '200001' AND '200012'
+AND  c.country_name ='Italy';]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725506411219]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.016]]></execTime>
+	</historyItem>
+</history>

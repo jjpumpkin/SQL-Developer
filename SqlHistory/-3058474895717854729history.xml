@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[WITH T1 AS(SELECT a.mem_id, a.mem_name, count(DISTINCT b.cart_no) cnt
+            FROM member a, cart b
+            WHERE a.mem_id =b.cart_member
+            GROUP BY a.mem_id, a.mem_name
+    ),T2 AS( SELECT MAX(T1.cnt) as max_cnt, MIN(T1.cnt) as min_cnt
+            FROM T1)
+    SELECT t1.mem_id, t1.mem_name, t1.cnt
+    FROM t1, t2
+    WHERE t1.cnt =t2.max_cnt
+    OR  t1.cnt = t2.min_cnt
+    ORDER BY 1;]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1725418130786]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[3]]></executed>
+		<execTime><![CDATA[0.022]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT job 
+       ,COUNT(distinct(JOB)) as CNT
+FROM customer
+where job is not null
+group by job
+order by cnt desc;]]></sql>
+		<connection><![CDATA[study]]></connection>
+		<timestamp><![CDATA[1725351628109]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

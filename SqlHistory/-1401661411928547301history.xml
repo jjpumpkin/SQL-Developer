@@ -1,0 +1,22 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT  department_id, emp_name, hire_date, salary
+        ,SUM(salary) OVER(PARTITION BY department_id ORDER BY hire_date
+                         ROWS BETWEEN UNBOUNDED PRECEDING 
+                         AND CURRENT ROW) as following_curr
+        ,SUM(salary) OVER(PARTITION BY department_id ORDER BY hire_date
+                         ROWS BETWEEN CURRENT ROW
+                         AND UNBOUNDED FOLLOWING) as curr_following
+        ,SUM(salary) OVER(PARTITION BY department_id ORDER BY hire_date
+                         ROWS BETWEEN 1 PRECEDING
+                         AND CURRENT ROW) as jun1_current
+                         -- salary 두개를 합쳐 jun1이 나옴
+FROM employees;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725589735451]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

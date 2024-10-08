@@ -1,0 +1,19 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT department_id as 부서번호
+       , LPAD (' ' , 3*(LEVEL-1)) || department_name as 부서명
+       , LEVEL
+       , CONNECT_BY_ROOT department_name as root_name  --루트 행의 컬럼 접근가능
+       , CONNECT_BY_ISLEAF as leafs                        --마지막 노드1, 자식있으면 -
+       , SYS_CONNECT_BY_PATH(department_name, '|') as depths --루트에서 현재행까지
+FROM departments 
+START WITH parent_id IS NULL
+CONNECT BY PRIOR department_id = parent_id;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725327603389]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

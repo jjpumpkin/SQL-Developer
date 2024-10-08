@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT mem_job                    as 직업
+      ,COUNT(mem_id)              as 회원수
+      ,SUM(mem_mileage)           as 마일리지합계
+      ,ROUND(AVG(mem_mileage),2)  as 마일리지평균
+FROM member
+GROUP BY mem_job
+HAVING SUM(mem_mileage) >= 10000  --집계결과에 검색조건
+ORDER BY 3 DESC;]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1724810821838]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

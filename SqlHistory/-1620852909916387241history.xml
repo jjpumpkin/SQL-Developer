@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT phone_number
+      ,customer_name
+FROM customer 
+     ,address
+     -- address 테이블에 안에 값을 넣을려면
+     -- address.address_detail '%강남구%';
+WHERE address.address_detail like '%강남구%']]></sql>
+		<connection><![CDATA[study]]></connection>
+		<timestamp><![CDATA[1725342299124]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

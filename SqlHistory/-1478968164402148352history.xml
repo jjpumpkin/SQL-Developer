@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM 학생 a
+LEFT OUTER JOIN 수강내역 b
+ON(a.학번 =b.학번)
+LEFT OUTER JOIN 과목 C
+ON(b. 과목번호 =c. 과목번호);]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725243218167]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.007]]></execTime>
+	</historyItem>
+</history>

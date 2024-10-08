@@ -1,0 +1,19 @@
+CREATE TABLE TB_INFO(
+INFO_NO NUMBER(2) PRIMARY KEY NOT NULL
+,PC_NO VARCHAR2(10) UNIQUE NOT NULL
+-- 물리적 필드명, 타입, 제약조건, 널허용
+,NM VARCHAR(20) NOT NULL
+,EMAIL VARCHAR(50) NOT NULL
+,HOBBY VARCHAR(1000) 
+,TEAM NUMBER(2) 
+,CREATE_DT DATE DEFAULT SYSDATE 
+,UPDATE_DT DATE DEFAULT SYSDATE 
+);
+-- null 값은 기본값이므로 안적어도됨
+drop TABLE tb_info;
+-- 테이블을 다적고 결과 출력해야함 하나만 하면
+-- 결과가 안나옴 drop 적고 삭제후 다시 
+SELECT * FROM tb_info;
+
+
+

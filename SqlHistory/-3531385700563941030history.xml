@@ -1,0 +1,16 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT region            as 지역
+      ,SUM(loan_jan_amt)  as 대출합
+FROM  kor_loan_status
+GROUP BY region
+HAVING SUM(loan_jan_amt) >=20000
+ORDER BY 2 DESC;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724810177229]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

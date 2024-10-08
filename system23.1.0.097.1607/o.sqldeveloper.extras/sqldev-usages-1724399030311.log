@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<usages xmlns="http://xmlns.oracle.com/sqldeveloper/400//usages-tracking-data"><property name='uid' value='72ebf649-0191-1000-8001-c0a8000fb2b0'/>
+<property name='sessionid' value='1724399030311'/>
+<property name='build' value='097.1607'/>
+<property name='devbuild' value='false'/>
+<property name='java-version' value='17.0.12'/>
+<property name='os-name' value='Windows 11'/>
+<property name='edition' value='null'/>
+<property name='product-name' value='Oracle SQL Developer'/>
+<property name='product-version' value='23.1.0.097.1607'/>
+<property name='start-time' value='1724385960240'/>
+<event id='editor-open' source='oracle.dbtools.worksheet.editor.Worksheet' time='1724385960241'><value  node-class='oracle.ide.db.model.SqlNode'  /></event><event id='editor-open' source='oracle.dbtools.raptor.startpage.StartPageViewer' time='1724385960498'><value  node-class='oracle.dbtools.raptor.startpage.StartPageNode'  /></event><event id='editor-open' source='com.oracle.jdeveloper.nbwindowsystem.NbMainWindow$MainWindowView' time='1724385961855'><value  node-class='com.oracle.jdeveloper.nbwindowsystem.NbMainWindow$MainWindowView'  /></event><event id='editor-open' source='oracle.dbtools.raptor.report.navigatorV2.ReportNavigatorWindow' time='1724385964794'><value  node-class='oracle.dbtools.raptor.report.navigatorV2.ReportNavigatorWindow'  /></event></usages>

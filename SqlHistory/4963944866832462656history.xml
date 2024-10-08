@@ -1,0 +1,33 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT *
+FROM ( SELECT rownum as rnum, a.*
+       FROM ( SELECT a.bo_no
+                    ,a.bo_title
+                    ,a.bo_category
+                    ,b.comm_nm as bo_category_nm
+                    ,a.bo_writer
+                    ,a.bo_pass
+                    ,a.bo_content
+                    ,a.bo_ip
+                    ,a.bo_hit
+                    ,a.bo_del_yn
+                    ,TO_CHAR(a.bo_reg_date, 'YYYY-MM-DD') as bo_reg_date
+                    ,TO_CHAR(a.bo_mod_date, 'YYYY-MM-DD') as bo_mod_date
+                   FROM free_board a
+                       ,comm_code  b
+                    WHERE a.bo_category = b.comm_cd
+                    AND   a.bo_title LIKE '%'|| :searchWord || '%'
+                    AND   a.bo_category = :searchCategory
+                    ORDER BY bo_no DESC
+                 ) a
+             ) b
+WHERE rnum BETWEEN :firstRow AND :lastRow;]]></sql>
+		<connection><![CDATA[jdbc]]></connection>
+		<timestamp><![CDATA[1728352860390]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

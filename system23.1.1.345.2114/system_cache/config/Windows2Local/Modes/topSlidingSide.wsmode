@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mode version="2.4">
+    <name unique="topSlidingSide"  />
+  <kind type="sliding" />
+  <slidingSide side="top" />
+  <slide-in-size tc-id="EditorContainer_12" size="914" />
+  <state type="joined"  />
+  <bounds x="6" y="23" width="1914" height="914" />
+  <frame state="0"/>
+    <empty-behavior permanent="true"/>
+</mode>

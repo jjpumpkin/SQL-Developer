@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT CUST_YEAR_OF_BIRTH
+,TO_CHAR(SYSDATE, 'YYYY') -CUST_YEAR_OF_BIRTH AS 나이
+,CASE WHEN TO_CHAR(SYSDATE,'YYYY')-CUST_YEAR_OF_BIRTH >=60 THEN '기타'
+      WHEN TO_CHAR(SYSDATE,'YYYY')-CUST_YEAR_OF_BIRTH >=50 THEN '50대'
+      WHEN TO_CHAR(SYSDATE,'YYYY')-CUST_YEAR_OF_BIRTH >=40 THEN '40대'
+      WHEN TO_CHAR(SYSDATE,'YYYY')-CUST_YEAR_OF_BIRTH >=30 THEN '30대'
+END AS 연령대
+FROM CUSTOMERS
+WHERE CUST_YEAR_OF_BIRTH >=1990
+ORDER BY 연령대;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725335413105]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.005]]></execTime>
+	</historyItem>
+</history>

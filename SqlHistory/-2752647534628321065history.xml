@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT mem_id
+      ,mem_name
+      ,count(DISTINCT cart_no) as 카트사용횟수
+      ,count(DISTINCT cart_prod) as 구매상품품목수
+      ,NVL(SUM(cart_qty),0) as 총구매수량 --NVL은 널값은 다른값으로 표현 괄호안에 있는걸 컴마뒤에 값으로 나오게함
+FROM cart,member      
+--WHERE  cart.cart_member = member.mem_id  --멤버 아이디중에 카트멤버랑 겹치는 값만 보여줌
+WHERE  cart.cart_member(+) = member.mem_id -- null 값이 있는쪽을 보여준다 없는쪽에 +표시
+group by mem_id ,mem_name
+order by  5 desc;]]></sql>
+		<connection><![CDATA[계정 생성]]></connection>
+		<timestamp><![CDATA[1724993609186]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">MEM_ID</Item>
+      <Item class="java.lang.String">MEM_NAME</Item>
+      <Item class="java.lang.String">COUNT(DISTINCTCART_NO)</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>66</Item>
+      <Item>91</Item>
+      <Item>185</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23%EA%B3%84%EC%A0%95+%EC%83%9D%EC%84%B1SELECT mem_id
+      ,mem_name
+      ,count(DISTINCT cart_no)
+FROM cart,member      
+--WHERE  cart.cart_member = member.mem_id  --멤버 아이디중에 카트멤버랑 겹치는 값만 보여줌
+WHERE  cart.cart_member(+) = member.mem_id -- null 값이 있는쪽을 보여준다 없는쪽에 +표시
+group by mem_id ,mem_name</uniqueName>
+</TableSettings>

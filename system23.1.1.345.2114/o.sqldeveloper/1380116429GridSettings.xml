@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">이름</Item>
+      <Item class="java.lang.String">전공</Item>
+      <Item class="java.lang.String">평점</Item>
+      <Item class="java.lang.String">나보다위학생</Item>
+      <Item class="java.lang.String">평점차이</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>74</Item>
+      <Item>74</Item>
+      <Item>229</Item>
+      <Item>91</Item>
+      <Item>229</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23javaSELECT 이름,전공,평점 ,LAG(이름,1,'1등')OVER(PARTITION BY 전공
+                                    ORDER BY 평점 DESC) as 나보다위학생
+                    ,LAG(평점,1,'0') OVER (PARTITION BY 전공
+                                    ORDER BY 평점 DESC) as 평점차이  
+FROM 학생</uniqueName>
+</TableSettings>

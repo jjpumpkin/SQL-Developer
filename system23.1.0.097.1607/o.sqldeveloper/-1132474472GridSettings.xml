@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSettings class="oracle.dbtools.raptor.controls.grid.RaptorGridPersistedSettings" xmlns="http://xmlns.oracle.com/jdeveloper/110000/Table-attributes">
+   <columnPositions class="java.util.ArrayList">
+      <Item class="java.lang.String">COL1</Item>
+      <Item class="java.lang.String">COL2</Item>
+      <Item class="java.lang.String">COL3</Item>
+   </columnPositions>
+   <columnWidths>
+      <Item>75</Item>
+      <Item>86</Item>
+      <Item>75</Item>
+   </columnWidths>
+   <searchParams class="java.util.ArrayList"/>
+   <sortClauses>
+      <Item/>
+   </sortClauses>
+   <uniqueName>IdeConnections%23javaSELECT * FROM ex2_1</uniqueName>
+</TableSettings>

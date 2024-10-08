@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT table_name , comments
+FROM all_tab_comments --테이블 정보 조회
+WHERE table_name='TB_INFO';]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1724634990391]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[7]]></executed>
+		<execTime><![CDATA[0.001]]></execTime>
+	</historyItem>
+</history>

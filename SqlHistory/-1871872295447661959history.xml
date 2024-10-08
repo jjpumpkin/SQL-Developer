@@ -1,0 +1,17 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT employee_id
+      ,sum(amount_sold) as 판매금액
+      ,sum(quantity_sold) as 판매수량
+FROM sales
+WHERE TO_CHAR(sales_date , 'YYYY') = '2000'
+GROUP BY employee_id
+ORDER BY 2 DESC;]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725246061703]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.117]]></execTime>
+	</historyItem>
+</history>

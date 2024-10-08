@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT MAX(period) as max_month
+ FROM kor_loan_status
+ GROUP BY SUBSTR(period,1,4);]]></sql>
+		<connection><![CDATA[java]]></connection>
+		<timestamp><![CDATA[1725412430674]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.003]]></execTime>
+	</historyItem>
+</history>
